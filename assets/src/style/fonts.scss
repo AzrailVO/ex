@@ -1,0 +1,72 @@
+@font-face {
+	// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+	font-family: "Europa"; 
+	// адрес шрифта и тип 
+	src: url("../fonts/Europa.ttf") format("truetype"),
+		 url("../fonts/Europa.eot") format("eot"),
+		 url("../fonts/Europa.woff") format("woff"); 
+	font-style: normal; 
+	font-weight: 400; 
+}
+@font-face {
+	// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+	font-family: "Europa"; 
+	// адрес шрифта и тип 
+	src: url("../fonts/europanuovabold.ttf") format("truetype"),
+		 url("../fonts/europanuovabold.eot") format("eot"),
+		 url("../fonts/europanuovabold.woff") format("woff"); 
+	font-style: normal; 
+	font-weight: 700; 
+}
+@font-face {
+	// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+	font-family: "Europa"; 
+	// адрес шрифта и тип 
+	src: url("../fonts/europanuovaextrabold.ttf") format("truetype"),
+		 url("../fonts/europanuovaextrabold.eot") format("eot"),
+		 url("../fonts/europanuovaextrabold.woff") format("woff"); 
+	font-style: normal; 
+	font-weight: 900; 
+}
+
+@font-face {
+	// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+	font-family: "Larsseit"; 
+	// адрес шрифта и тип 
+	src: url("../fonts/Larsseit.ttf") format("truetype"),
+		 url("../fonts/Larsseit.eot") format("eot"),
+		 url("../fonts/Larsseit.woff") format("woff"); 
+	font-style: normal; 
+	font-weight: 400; 
+}
+@font-face {
+	// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+	font-family: "Larsseit Bold"; 
+	// адрес шрифта и тип 
+	src: url("../fonts/Larsseit-Bold.ttf") format("truetype"),
+		 url("../fonts/Larsseit-Bold.eot") format("eot"),
+		 url("../fonts/Larsseit-Bold.woff") format("woff"); 
+	font-style: normal; 
+	font-weight: 700; 
+}
+@font-face {
+	// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+	font-family: "Larsseit ExtraBold"; 
+	// адрес шрифта и тип 
+	src: url("../fonts/Larsseit-ExtraBold.ttf") format("truetype"),
+		 url("../fonts/Larsseit-ExtraBold.eot") format("eot"),
+		 url("../fonts/Larsseit-ExtraBold.woff") format("woff"); 
+	font-style: normal; 
+	font-weight: 900; 
+}
+
+@font-face {
+	// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+	font-family: "Larsseit Medium"; 
+	// адрес шрифта и тип 
+	src: url("../fonts/Larsseit-Medium.ttf") format("truetype"),
+		 url("../fonts/Larsseit-Medium.eot") format("eot"),
+		 url("../fonts/Larsseit-Medium.woff") format("woff"); 
+	font-style: normal; 
+	font-weight: 600;
+}

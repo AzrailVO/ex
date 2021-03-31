@@ -1,0 +1,225 @@
+$font: 'Larsseit', sans-serif;
+$bfont: 'Larsseit Bold', sans-serif;
+$cian: #62D0DF;
+$dblue: #22356F;
+$yellow: #F9B640;
+* {
+	box-sizing: border-box;
+	transition: .2s all linear;
+}
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: $font;
+}
+//Global properties
+a {
+	color: inherit;
+	&:hover {
+		text-decoration: none;
+	}
+}
+button {
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+}
+input {
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+}
+.ttu{
+	text-transform: uppercase;
+}
+//NAVBAR
+.navbar{
+	transition: 0s all linear;
+	z-index: 999;
+	position: fixed;
+	width: 100%;
+	background: #fff;
+	&:after{
+		transition: .2s all linear;
+		bottom: 0;
+		content: '';
+		width: 0;
+		background: $dblue;
+		height: 1px;
+		position: absolute;
+		left: 50%;
+	}
+	&-fixed{
+		transition: .2s;
+		&:after{
+			bottom: 0;
+			content: '';
+			background: $dblue;
+			height: 1px;
+			position: absolute;
+			left: 0;
+			transition: .2s all linear;
+			width: 100%;
+		}
+	}
+	&-collapse{
+		display: flex;
+		justify-content: space-around;
+	}
+	&-brand{
+		&-logo{
+			font-family: $bfont;
+			letter-spacing: -0.035em;
+			color: $cian;
+			font-size: 24px;
+		}
+	}
+	&-nav{
+		&-contact{
+			&-but{
+				display: inline-block;
+				padding: 20px 30px;
+				background: $cian;
+				font-family: $bfont;
+				font-size: 14px;
+				color: #FFF;
+				border-radius: 999px;
+				&:hover{
+					opacity: .8;
+					color: #fff;
+				}
+			}
+		}
+		&-link{
+			color: $dblue;
+			padding-bottom: 15px;
+			position: relative;
+			margin-left: 25px;
+			&:first-child{
+				margin-left: 0;
+			}
+			&:after{
+				transition: .2s all linear;
+				bottom: 0;
+				content: '';
+				width: 0;
+				background: $dblue;
+				height: 1px;
+				position: absolute;
+				left: 50%;
+			}
+			&:hover{
+				&:after{
+					left: 0;
+					transition: .2s all linear;
+					width: 100%;
+				}
+			}
+		}
+		& .active{
+			border-bottom: 1px solid $dblue;
+		}
+	}
+}
+//SECTIONS
+.sec{
+	&-head{
+		&-sec2{
+			padding-top: 200px;
+			&__overtitle{
+				font-family: $bfont;
+				font-size: 24px;
+				letter-spacing: -0.035em;
+				color: $cian;
+			}
+			&__title{
+				padding-top: 50px;
+				font-family: $bfont;
+				font-size: 48px;
+				color: $dblue;
+				letter-spacing: -0.035em;
+			}
+			&__text{
+				padding-top: 80px;
+				font-family: Larsseit;
+				font-size: 24px;
+				color: $dblue;
+			}
+			&-buttons{
+				padding-top: 60px;
+				width: 100%;
+				display: flex;
+				&__button{
+					display: inline-block;
+					font-family: Larsseit;
+					font-size: 16px;
+					letter-spacing: 0.1em;
+					padding: 20px 30px;
+					background: none;
+					color: $yellow;
+					&:hover{
+						color: #fff;
+						background: $yellow;
+					}
+					&-div{
+						padding-left: 40px;
+						&:first-child{
+							padding-left: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	&-sec2{
+		padding-top: 120px;
+		&-square{
+			background: $dblue;
+			display: flex;
+			justify-content: center;
+			&-napol{
+				margin-top: 90px;
+				padding-top: 40px;
+				border-top: 1px solid #fff;
+				display: flex;
+				padding-bottom: 270px;
+			}
+			&-point{
+				display: inline-block;
+				width: 15px;
+				height: 15px;
+				background: $yellow;
+				border-radius: 999px;
+				transform: translateY(100%);
+			}
+			&-title{
+				font-family: $bfont;
+				font-size: 32px;
+				letter-spacing: -0.006em;
+				color: #FFFFFF;
+				width: 50%;
+				padding-left: 20px;
+			}
+		}
+	}
+}
+.button{
+	display: inline-block;
+	padding: 20px 30px;
+	background: $yellow;
+	color: #fff;
+	border: 2px solid $yellow;
+	&-div{
+		display: flex;
+		justify-content: center;
+		padding-top: 50px;
+	}
+	&:hover{
+		color: #000;
+		border: 2px solid $dblue;
+	}
+}
